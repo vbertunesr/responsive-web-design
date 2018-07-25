@@ -1,0 +1,53 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-gap: 10px;   
+    grid-template-areas: 'header header header header'
+                         'content sidebar letrad letrah'
+                         'letrae letraf letrag letrah';                               
+  }
+  
+  header {
+    background-color: yellow;
+    grid-area: header;  
+  }
+  main {
+    background-color: aqua;
+    grid-area: content;
+  }
+  .sidebar{
+    grid-area: sidebar;
+    background-color: lightblue;
+  }
+  .letrad{
+    grid-area: letrad;
+    background-color: purple;
+  }
+  .letrae{
+    grid-area: letrae;
+    background-color: orange;
+  }
+  .letraf{
+    grid-area: letraf;
+    background-color: hotpink;  
+  }
+  .letrag{
+    grid-area: letrag;
+    background-color: navy;  
+  }
+ .letrah{
+    grid-area: letrah;
+    background-color: red;  
+  }
+  
+   @media screen and (max-width: 480px) {
+    .wrapper {
+      grid-template-rows: 150px 100px 100px 150px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 'header header header' 
+                           'content sidebar letrad' 
+                           'letrae letraf letrag'
+                           'letrah letrah letrah';
+    }
+  }  

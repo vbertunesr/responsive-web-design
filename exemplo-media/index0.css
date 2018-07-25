@@ -8,7 +8,7 @@
   height: 300px;
   background-color: blue;
 }
-@media screen and (min-device-width: 600px){
+@media screen and (min-device-width: 600px) {
   .quadrado{
     background-color: red;
   }
